@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const text = input.toLowerCase();
             
             if (text.includes('skill')) {
-                return "I work with HTML, CSS, JavaScript, React, Node.js, and more.";
+                return "I work with Python, Deep Learning , Data Analysis, SQL, AI Systems, and more.";
             } else if (text.includes('project') || text.includes('work')) {
                 return "Check out the Work section to see my recent projects!";
             } else if (text.includes('contact') || text.includes('email')) {
-                return "You can reach me via the contact form or email at hello@example.com";
+                return "You can reach me via the contact form or email at jayantjangir@gmail.com";
             } else if (text.includes('experience')) {
-                return "I have 5+ years of web development experience.";
+                return "I have 1+ years of experience in AI and Data Science.";
             } else {
                 return "I can help with questions about my skills, projects, or contact info!";
             }
