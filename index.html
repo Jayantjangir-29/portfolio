@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Courier+Prime:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-btn" id="themeToggle">Dark</button>
+            </nav>
+
+            <!-- Hero -->
+            <div class="hero" id="home">
+                <h1>Jayant J.<br>Web Developer</h1>
+                <p class="subtitle">Building clean, functional websites</p>
+                <div class="skills">
+                    <span class="skill">Python</span>
+                    <span class="skill">Machine Learning</span>
+                    <span class="skill">Data Analysis</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Deep Learning</span>
+                    <span class="skill">AI Systems</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About</h2>
+            <div class="about-text">
+                <p>My name is Jayant Jangir, and I am currently pursuing a BS in Data Science and Applications from IIT
+                    Madras. My academic focus is centered on Artificial Intelligence, data analytics, and computational
+                    problem-solving.</p>
+                <p>I am committed to developing robust, scalable systems that leverage data for strategic
+                    decision-making and innovation. Through a combination of analytical rigor and technical execution, I
+                    aim to contribute meaningfully to the evolving landscape of AI-driven technologies.</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">1+</span>
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">AI & ML</span>
+                    <span class="stat-label">Specialization</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">Scalable</span>
+                    <span class="stat-label">Systems Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>Work</h2>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-num">[01]</div>
+                    <h3>E-Commerce Website</h3>
+                    <p>Built a full-featured online store with shopping cart, payment integration, and admin dashboard.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-num">[02]</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Created a data visualization dashboard with real-time charts and reporting features.</p>
+                    <div class="tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-num">[03]</div>
+                    <h3>Mobile App</h3>
+                    <p>Developed a cross-platform mobile app for task management and team collaboration.</p>
+                    <div class="tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Redux</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-num">[04]</div>
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and built a modern portfolio site with smooth animations and responsive layout.</p>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div>
+                    <p style="margin-bottom: 2rem; color: var(--gray);">Let's work together on your next project.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Jayantjangir-29" class="social-link">GitHub →</a>
+                        <a href="https://www.linkedin.com/in/jayant-jangir-6109b42b2/" class="social-link">LinkedIn
+                            →</a>
+                        <a href="https://twitter.com" class="social-link">Twitter →</a>
+                        <a href="mailto:jayantjangir@gmail.com?subject=Portfolio Inquiry&body=Hi Jayant, I would like to discuss..."
+                            class="social-link">
+                            Email →
+                        </a>
+
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 jayant jangir. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Chatbot -->
+    <button class="chat-btn" id="chatBtn">💬</button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <h3>AI Assistant</h3>
+            <button class="close-chat" id="closeChat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+                Hi! Ask me about skills, projects, or how to get in touch.
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type a message...">
+            <button class="send-btn" id="sendBtn">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
